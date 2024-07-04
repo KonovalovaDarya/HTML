@@ -11,35 +11,37 @@
         <h1>ORDER FORM</h1>
         <fieldset>
             <legend>Personal information</legend>
-            <input type="text" id="firstName" placeholder="first name"/><br>
-            <input type="text" id="lastName" placeholder="last name"/><br>
-            <input type="text" id="middleName" placeholder="middle name"/>
-            <input type="checkbox" id="noMiddleName"/>
+            <input name="firsrtName", type="text" id="firstName" placeholder="first name"/><br>
+            <input name="lastName", type="text" id="lastName" placeholder="last name"/><br>
+            <input name="middleName", type="text" id="middleName" placeholder="middle name"/>
+            <input name="noMiddleName", type="checkbox" id="noMiddleName"/>
             <label for="noMiddleName">don't have middle name</label>
-            <p><select>
+            <p><select name="age">
                 <option disabled selected>age</option>
-                <option name="age" value="18to30">18-30</option>
-                <option name="age" value="30to40">30-40</option>
-                <option name="age" value="40to50">40-50</option>
-                <option name="age" value="above50">50 and above</option>
+                <option value="18to30">18-30</option>
+                <option value="30to40">30-40</option>
+                <option value="40to50">40-50</option>
+                <option value="above50">50 and above</option>
             </select></p>
-            <input type="radio" name="gender" value="female">female<br>
-            <input type="radio" name="gender" value="male">male<br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">female</label>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">male</label>
         </fieldset>
         <fieldset>
             <legend>Your order</legend>
-            <select multiple size="6">
-                <option name="items" value="item1">item1</option>
-                <option name="items" value="item2">item2</option>
-                <option name="items" value="item3">item3</option>
-                <option name="items" value="item4">item4</option>
-                <option name="items" value="item5">item5</option>
-                <option name="items" value="item6">item6</option>
+            <select name="items" multiple size="6">
+                <option value="item1">item1</option>
+                <option value="item2">item2</option>
+                <option value="item3">item3</option>
+                <option value="item4">item4</option>
+                <option value="item5">item5</option>
+                <option value="item6">item6</option>
             </select>
         </fieldset>
         <fieldset>
             <legend>Comment section</legend>
-            <textarea  placeholder="enter comment"></textarea>
+            <textarea name="comment" placeholder="enter comment"></textarea>
         </fieldset>
         <p><button type="submit">Send</button></p>
     </form>
